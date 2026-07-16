@@ -12,7 +12,7 @@ export default function Logo() {
           <path d="M3 17l6-6 4 4 8-10v3h2V3h-8v2h3L13 13l-4-4-8 8z" />
         </svg>
       </div>
-      <span className="font-nacelle text-lg font-semibold text-gray-200">
+      <span className="font-nacelle text-base font-semibold text-gray-200 sm:text-lg">
         TradeMind<span className="text-emerald-400">AI</span>
       </span>
     </Link>

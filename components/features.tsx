@@ -100,17 +100,17 @@ export default function Features() {
                 Platform Features
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-emerald-300),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-emerald-300),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-2xl font-semibold text-transparent sm:text-3xl md:text-4xl">
               Everything you need to trade with an edge
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="text-base text-indigo-200/65 sm:text-lg">
               A complete AI-powered trading ecosystem — from your first trade to
               advanced automated strategies.
             </p>
           </div>
           {/* AI Trading flow graphic */}
           <div className="mx-auto mb-8 max-w-4xl md:mb-12" data-aos="fade-up">
-            <div className="relative overflow-hidden rounded-2xl border border-gray-800/80 bg-linear-to-br from-gray-900 via-gray-950 to-gray-900 p-6 sm:p-10">
+            <div className="relative overflow-hidden rounded-2xl border border-gray-800/80 bg-linear-to-br from-gray-900 via-gray-950 to-gray-900 p-3 sm:p-6 md:p-10">
               {/* Ambient glow */}
               <div
                 className="pointer-events-none absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-500/10 blur-3xl"

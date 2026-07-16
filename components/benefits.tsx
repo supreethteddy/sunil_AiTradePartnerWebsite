@@ -45,7 +45,43 @@ export default function Benefits() {
             </p>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-gray-800/80">
+          {/* Mobile stacked comparison */}
+          <div className="space-y-4 md:hidden">
+            {benefits.map((row, index) => (
+              <div
+                key={index}
+                className="overflow-hidden rounded-2xl border border-gray-800/80"
+              >
+                <div className="flex items-start gap-2 border-b border-gray-800/80 px-4 py-3 text-sm text-indigo-200/50">
+                  <svg
+                    className="mt-0.5 shrink-0 fill-gray-600"
+                    width={14}
+                    height={14}
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" strokeWidth="2" fill="none" />
+                  </svg>
+                  <span className="line-through decoration-gray-600">
+                    {row.traditional}
+                  </span>
+                </div>
+                <div className="flex items-start gap-2 bg-emerald-500/5 px-4 py-3 text-sm text-gray-200">
+                  <svg
+                    className="mt-0.5 shrink-0 fill-emerald-500"
+                    width={14}
+                    height={14}
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M6.5 11.5 3 8l1-1 2.5 2.5L12 4l1 1-6.5 6.5Z" />
+                  </svg>
+                  {row.trademind}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop table */}
+          <div className="hidden overflow-hidden rounded-2xl border border-gray-800/80 md:block">
             <div className="grid grid-cols-2 bg-gray-900/50 text-sm font-medium">
               <div className="border-b border-r border-gray-800/80 px-6 py-4 text-gray-500">
                 Traditional Platforms
@@ -58,8 +94,6 @@ export default function Benefits() {
               <div
                 key={index}
                 className="grid grid-cols-2 border-b border-gray-800/80 last:border-b-0"
-                data-aos="fade-up"
-                data-aos-delay={index * 50}
               >
                 <div className="flex items-center gap-3 border-r border-gray-800/80 px-6 py-5 text-indigo-200/50">
                   <svg
