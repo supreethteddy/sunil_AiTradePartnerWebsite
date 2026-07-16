@@ -19,11 +19,11 @@ export default function DefaultLayout({
       duration: 600,
       easing: "ease-out-sine",
     });
-  });
+  }, []);
 
   return (
     <>
-      <main className="relative flex grow flex-col">{children}</main>
+      <main className="relative flex grow flex-col bg-gray-950">{children}</main>
 
       <Footer />
     </>
