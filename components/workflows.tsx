@@ -50,40 +50,35 @@ export default function Workflows() {
             <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-emerald-300),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-2xl font-semibold text-transparent sm:text-3xl md:text-4xl">
               Your trading journey, simplified
             </h2>
-            <p className="text-base text-indigo-200/65 sm:text-lg">
+            <p className="px-1 text-base text-indigo-200/65 sm:text-lg">
               Five simple steps from account opening to profitable trading —
               guided by AI at every stage.
             </p>
           </div>
 
-          <ol className="mx-auto grid max-w-3xl gap-4 sm:gap-5">
+          <div className="mx-auto flex max-w-2xl flex-col gap-4">
             {steps.map((step) => (
-              <li
+              <div
                 key={step.number}
-                className="rounded-2xl border border-gray-800/80 bg-gray-900/50 p-4 sm:p-5"
+                className="rounded-2xl border border-gray-800 bg-gray-900 p-5"
               >
-                <div className="flex gap-3 sm:gap-4">
-                  <div
-                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-linear-to-br from-emerald-600 to-indigo-600 font-nacelle text-sm font-semibold text-white sm:h-12 sm:w-12 sm:text-base"
-                    aria-hidden="true"
-                  >
+                <div className="mb-3 flex items-center gap-2">
+                  <span className="rounded-lg bg-emerald-600 px-2.5 py-1 font-nacelle text-sm font-bold text-white">
                     {step.number}
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <span className="mb-1 inline-block rounded-full bg-gray-800 px-2.5 py-0.5 text-xs text-emerald-400">
-                      {step.tag}
-                    </span>
-                    <h3 className="mb-1.5 font-nacelle text-base font-semibold text-gray-200 sm:text-lg">
-                      {step.title}
-                    </h3>
-                    <p className="text-sm leading-relaxed text-indigo-200/65 sm:text-[15px]">
-                      {step.description}
-                    </p>
-                  </div>
+                  </span>
+                  <span className="rounded-full border border-emerald-500/30 px-2.5 py-0.5 text-xs text-emerald-400">
+                    {step.tag}
+                  </span>
                 </div>
-              </li>
+                <h3 className="mb-2 font-nacelle text-lg font-semibold text-white">
+                  {step.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-400">
+                  {step.description}
+                </p>
+              </div>
             ))}
-          </ol>
+          </div>
         </div>
       </div>
     </section>
