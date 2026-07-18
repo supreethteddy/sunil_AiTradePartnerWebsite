@@ -23,7 +23,7 @@ export default function Cta() {
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
                 className="inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-violet-600 to-fuchsia-500 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_0_32px_rgba(124,58,237,0.55)] transition hover:brightness-110 sm:w-auto"
-                href="/signup"
+                href="#start-trading"
                 data-aos="fade-up"
                 data-aos-delay={400}
               >
@@ -31,7 +31,7 @@ export default function Cta() {
               </a>
               <a
                 className="inline-flex w-full items-center justify-center rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-black shadow-[0_0_24px_rgba(255,214,0,0.35)] transition hover:bg-accent-dark sm:w-auto"
-                href="/signup"
+                href="#start-trading"
                 data-aos="fade-up"
                 data-aos-delay={600}
               >
