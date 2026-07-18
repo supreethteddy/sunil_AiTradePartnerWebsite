@@ -122,7 +122,7 @@ export default function Pricing() {
                       ))}
                     </ul>
                     <a
-                      href="/signup"
+                      href="#start-trading"
                       className={`btn w-full text-center ${
                         plan.highlighted
                           ? "bg-accent font-semibold text-black shadow-[0_0_24px_rgba(255,214,0,0.35)] hover:bg-accent-dark"

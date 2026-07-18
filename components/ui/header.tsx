@@ -41,7 +41,7 @@ export default function Header() {
               Sign In
             </Link>
             <Link
-              href="/signup"
+              href="#start-trading"
               className="rounded-xl bg-accent px-3 py-2 text-xs font-semibold text-black shadow-[0_0_20px_rgba(255,214,0,0.35)] transition hover:bg-accent-dark sm:px-4 sm:text-sm"
             >
               Start Trading Free
