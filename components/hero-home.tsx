@@ -16,8 +16,8 @@ export default function HeroHome() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid items-center gap-10 py-10 md:py-16 lg:grid-cols-2 lg:gap-12 lg:py-20">
-          {/* Left copy */}
+        <div className="grid items-center gap-8 py-10 md:gap-10 md:py-16 lg:grid-cols-2 lg:gap-12 lg:py-20">
+          {/* Left copy + image */}
           <div className="text-center lg:text-left">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-3 py-1.5 text-xs text-violet-200 sm:text-sm">
               <span className="relative flex h-2 w-2">
@@ -38,23 +38,23 @@ export default function HeroHome() {
               market insights, portfolio analysis, and 24/7 intelligent support.
             </p>
 
-            <a
-              href="#start-trading"
-              className="mb-8 inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-violet-600 to-fuchsia-500 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_0_32px_rgba(124,58,237,0.55)] transition hover:brightness-110 sm:w-auto lg:hidden"
-            >
-              Start Trading Free
-            </a>
-
-            <div className="relative mx-auto mb-6 hidden max-w-md overflow-hidden rounded-2xl border border-violet-500/30 lg:mx-0 lg:block lg:max-w-lg">
+            <div className="relative mx-auto mb-6 max-w-lg overflow-hidden rounded-2xl border border-violet-500/40 bg-[#12082a] p-1.5 shadow-[0_0_30px_rgba(124,58,237,0.3)] lg:mx-0">
               <Image
                 src={HERO_IMAGE}
                 alt="TradeMind AI platform highlight"
                 width={1400}
                 height={720}
-                className="h-auto w-full object-cover"
+                className="h-auto w-full rounded-xl object-cover"
                 priority
               />
             </div>
+
+            <a
+              href="#start-trading"
+              className="mb-4 inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-violet-600 to-fuchsia-500 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_0_32px_rgba(124,58,237,0.55)] transition hover:brightness-110 sm:w-auto lg:hidden"
+            >
+              Start Trading Free
+            </a>
 
             <p className="text-xs text-zinc-500">
               No minimum deposit · Account setup in under 5 minutes · Bank-grade
