@@ -2,34 +2,34 @@ import Logo from "./logo";
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 bg-gray-950">
+    <footer className="relative z-10 bg-background">
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
           <div className="space-y-2">
             <h3 className="text-sm font-medium text-gray-200">Platform</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#features">
+                <a className="text-zinc-400 transition hover:text-accent" href="#features">
                   Features
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#how-it-works">
+                <a className="text-zinc-400 transition hover:text-accent" href="#how-it-works">
                   How It Works
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#pricing">
+                <a className="text-zinc-400 transition hover:text-accent" href="#pricing">
                   Pricing
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#insights">
+                <a className="text-zinc-400 transition hover:text-accent" href="#insights">
                   Market Insights
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#faq">
+                <a className="text-zinc-400 transition hover:text-accent" href="#faq">
                   FAQ
                 </a>
               </li>
@@ -39,22 +39,22 @@ export default function Footer() {
             <h3 className="text-sm font-medium text-gray-200">Markets</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Stocks &amp; ETFs
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Options &amp; Futures
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Commodities
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Forex
                 </a>
               </li>
@@ -64,22 +64,22 @@ export default function Footer() {
             <h3 className="text-sm font-medium text-gray-200">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Trading Academy
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Market Blog
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   API Documentation
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Help Center
                 </a>
               </li>
@@ -89,22 +89,22 @@ export default function Footer() {
             <h3 className="text-sm font-medium text-gray-200">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Risk Disclosure
                 </a>
               </li>
               <li>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   SEBI Registration
                 </a>
               </li>
@@ -115,10 +115,10 @@ export default function Footer() {
               <Logo />
             </div>
             <div className="text-sm">
-              <p className="mb-3 text-indigo-200/65">
+              <p className="mb-3 text-zinc-400">
                 © TradeMind AI
                 <span className="text-gray-700"> · </span>
-                <a className="text-indigo-200/65 transition hover:text-emerald-400" href="#0">
+                <a className="text-zinc-400 transition hover:text-accent" href="#0">
                   Terms
                 </a>
               </p>
@@ -129,7 +129,7 @@ export default function Footer() {
               <ul className="inline-flex gap-1">
                 <li>
                   <a
-                    className="flex items-center justify-center text-emerald-500 transition hover:text-emerald-400"
+                    className="flex items-center justify-center text-accent transition hover:text-accent"
                     href="#0"
                     aria-label="Twitter"
                   >
@@ -140,7 +140,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="flex items-center justify-center text-emerald-500 transition hover:text-emerald-400"
+                    className="flex items-center justify-center text-accent transition hover:text-accent"
                     href="#0"
                     aria-label="LinkedIn"
                   >
@@ -151,7 +151,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    className="flex items-center justify-center text-emerald-500 transition hover:text-emerald-400"
+                    className="flex items-center justify-center text-accent transition hover:text-accent"
                     href="#0"
                     aria-label="Github"
                   >

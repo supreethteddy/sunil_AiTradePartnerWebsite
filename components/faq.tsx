@@ -47,19 +47,19 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <section id="faq" className="relative z-10 bg-gray-950">
+    <section id="faq" className="relative z-10 bg-background">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-emerald-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-emerald-200/50">
-              <span className="inline-flex bg-linear-to-r from-emerald-500 to-indigo-200 bg-clip-text text-transparent">
+            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-violet-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-violet-200/50">
+              <span className="inline-flex bg-linear-to-r from-violet-500 to-violet-200 bg-clip-text text-transparent">
                 FAQ
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-emerald-300),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-accent),var(--color-gray-50),var(--color-brand-light),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Frequently asked questions
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="text-lg text-zinc-400">
               Everything you need to know before you start trading with AI.
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function Faq() {
                         <path d="M8 11 3 6h10l-5 5Z" />
                       </svg>
                     </DisclosureButton>
-                    <DisclosurePanel className="px-6 pb-4 text-indigo-200/65">
+                    <DisclosurePanel className="px-6 pb-4 text-zinc-400">
                       {faq.answer}
                     </DisclosurePanel>
                   </div>

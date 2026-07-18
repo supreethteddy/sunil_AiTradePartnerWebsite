@@ -91,33 +91,33 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="relative z-10 bg-gray-950">
+    <section id="features" className="relative z-10 bg-background">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
-            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-emerald-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-emerald-200/50">
-              <span className="inline-flex bg-linear-to-r from-emerald-500 to-indigo-200 bg-clip-text text-transparent">
+            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-violet-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-violet-200/50">
+              <span className="inline-flex bg-linear-to-r from-violet-500 to-violet-200 bg-clip-text text-transparent">
                 Platform Features
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-emerald-300),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-2xl font-semibold text-transparent sm:text-3xl md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-accent),var(--color-gray-50),var(--color-brand-light),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-2xl font-semibold text-transparent sm:text-3xl md:text-4xl">
               Everything you need to trade with an edge
             </h2>
-            <p className="text-base text-indigo-200/65 sm:text-lg">
+            <p className="text-base text-zinc-400 sm:text-lg">
               A complete AI-powered trading ecosystem — from your first trade to
               advanced automated strategies.
             </p>
           </div>
           {/* AI Trading flow graphic */}
           <div className="mx-auto mb-8 max-w-4xl md:mb-12" data-aos="fade-up">
-            <div className="relative overflow-hidden rounded-2xl border border-gray-800/80 bg-linear-to-br from-gray-900 via-gray-950 to-gray-900 p-3 sm:p-6 md:p-10">
+            <div className="relative overflow-hidden rounded-2xl border border-violet-900/50 bg-linear-to-br from-card via-background to-card p-3 sm:p-6 md:p-10">
               {/* Ambient glow */}
               <div
-                className="pointer-events-none absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-emerald-500/10 blur-3xl"
+                className="pointer-events-none absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-500/10 blur-3xl"
                 aria-hidden="true"
               />
               <div
-                className="pointer-events-none absolute right-1/4 top-1/4 h-32 w-32 rounded-full bg-indigo-500/10 blur-3xl"
+                className="pointer-events-none absolute right-1/4 top-1/4 h-32 w-32 rounded-full bg-violet-500/10 blur-3xl"
                 aria-hidden="true"
               />
 
@@ -153,8 +153,8 @@ export default function Features() {
 
                 <defs>
                   <linearGradient id="flowGrad" x1="0" y1="0" x2="1" y2="0">
-                    <stop offset="0%" stopColor="#10b981" />
-                    <stop offset="100%" stopColor="#818cf8" />
+                    <stop offset="0%" stopColor="#a78bfa" />
+                    <stop offset="100%" stopColor="#c084fc" />
                   </linearGradient>
                   <linearGradient id="nodeGrad" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#1f2937" />
@@ -173,41 +173,41 @@ export default function Features() {
                 <g transform="translate(40, 85)">
                   <rect width="100" height="110" rx="14" fill="url(#nodeGrad)" stroke="#374151" strokeWidth="1" />
                   {/* Mini candlesticks */}
-                  <line x1="22" y1="28" x2="22" y2="62" stroke="#10b981" strokeWidth="1.5" />
-                  <rect x="17" y="35" width="10" height="20" rx="1" fill="#10b981" />
+                  <line x1="22" y1="28" x2="22" y2="62" stroke="#a78bfa" strokeWidth="1.5" />
+                  <rect x="17" y="35" width="10" height="20" rx="1" fill="#a78bfa" />
                   <line x1="40" y1="22" x2="40" y2="55" stroke="#ef4444" strokeWidth="1.5" />
                   <rect x="35" y="30" width="10" height="18" rx="1" fill="#ef4444" />
-                  <line x1="58" y1="25" x2="58" y2="58" stroke="#10b981" strokeWidth="1.5" />
-                  <rect x="53" y="32" width="10" height="16" rx="1" fill="#10b981" />
-                  <line x1="76" y1="20" x2="76" y2="50" stroke="#10b981" strokeWidth="1.5" />
-                  <rect x="71" y="26" width="10" height="14" rx="1" fill="#10b981" />
+                  <line x1="58" y1="25" x2="58" y2="58" stroke="#a78bfa" strokeWidth="1.5" />
+                  <rect x="53" y="32" width="10" height="16" rx="1" fill="#a78bfa" />
+                  <line x1="76" y1="20" x2="76" y2="50" stroke="#a78bfa" strokeWidth="1.5" />
+                  <rect x="71" y="26" width="10" height="14" rx="1" fill="#a78bfa" />
                   <text x="50" y="88" textAnchor="middle" fill="#e5e7eb" fontSize="11" fontWeight="600" fontFamily="system-ui">
                     ANALYZE
                   </text>
-                  <text x="50" y="102" textAnchor="middle" fill="#6ee7b7" fontSize="8" fontFamily="system-ui">
+                  <text x="50" y="102" textAnchor="middle" fill="#ffd600" fontSize="8" fontFamily="system-ui">
                     Charts &amp; Data
                   </text>
                 </g>
 
                 {/* Node 2 — AI Insight (center top) */}
                 <g transform="translate(280, 30)">
-                  <rect width="160" height="100" rx="16" fill="url(#nodeGrad)" stroke="#10b981" strokeWidth="1.5" filter="url(#glow)" />
+                  <rect width="160" height="100" rx="16" fill="url(#nodeGrad)" stroke="#a78bfa" strokeWidth="1.5" filter="url(#glow)" />
                   {/* AI brain / circuit icon */}
-                  <circle cx="80" cy="38" r="18" fill="#10b981" fillOpacity="0.15" stroke="#10b981" strokeWidth="1.5" />
-                  <circle cx="80" cy="38" r="8" fill="#10b981" />
+                  <circle cx="80" cy="38" r="18" fill="#a78bfa" fillOpacity="0.15" stroke="#a78bfa" strokeWidth="1.5" />
+                  <circle cx="80" cy="38" r="8" fill="#a78bfa" />
                   <circle cx="80" cy="38" r="3" fill="#ecfdf5" />
-                  <line x1="62" y1="38" x2="55" y2="38" stroke="#10b981" strokeWidth="1.5" />
-                  <line x1="98" y1="38" x2="105" y2="38" stroke="#10b981" strokeWidth="1.5" />
-                  <line x1="80" y1="20" x2="80" y2="13" stroke="#10b981" strokeWidth="1.5" />
-                  <line x1="68" y1="26" x2="62" y2="20" stroke="#10b981" strokeWidth="1.5" />
-                  <line x1="92" y1="26" x2="98" y2="20" stroke="#10b981" strokeWidth="1.5" />
-                  <circle cx="55" cy="38" r="2.5" fill="#818cf8" />
-                  <circle cx="105" cy="38" r="2.5" fill="#818cf8" />
-                  <circle cx="80" cy="13" r="2.5" fill="#818cf8" />
+                  <line x1="62" y1="38" x2="55" y2="38" stroke="#a78bfa" strokeWidth="1.5" />
+                  <line x1="98" y1="38" x2="105" y2="38" stroke="#a78bfa" strokeWidth="1.5" />
+                  <line x1="80" y1="20" x2="80" y2="13" stroke="#a78bfa" strokeWidth="1.5" />
+                  <line x1="68" y1="26" x2="62" y2="20" stroke="#a78bfa" strokeWidth="1.5" />
+                  <line x1="92" y1="26" x2="98" y2="20" stroke="#a78bfa" strokeWidth="1.5" />
+                  <circle cx="55" cy="38" r="2.5" fill="#c084fc" />
+                  <circle cx="105" cy="38" r="2.5" fill="#c084fc" />
+                  <circle cx="80" cy="13" r="2.5" fill="#c084fc" />
                   <text x="80" y="72" textAnchor="middle" fill="#e5e7eb" fontSize="12" fontWeight="600" fontFamily="system-ui">
                     AI INSIGHT
                   </text>
-                  <text x="80" y="86" textAnchor="middle" fill="#6ee7b7" fontSize="8" fontFamily="system-ui">
+                  <text x="80" y="86" textAnchor="middle" fill="#ffd600" fontSize="8" fontFamily="system-ui">
                     Buy / Sell Signals
                   </text>
                 </g>
@@ -218,13 +218,13 @@ export default function Features() {
                   {/* Lightning / execute */}
                   <path
                     d="M58 22 L42 48 H52 L46 72 L68 42 H56 Z"
-                    fill="#818cf8"
+                    fill="#c084fc"
                     fillOpacity="0.9"
                   />
                   <text x="50" y="88" textAnchor="middle" fill="#e5e7eb" fontSize="11" fontWeight="600" fontFamily="system-ui">
                     EXECUTE
                   </text>
-                  <text x="50" y="102" textAnchor="middle" fill="#a5b4fc" fontSize="8" fontFamily="system-ui">
+                  <text x="50" y="102" textAnchor="middle" fill="#e9d5ff" fontSize="8" fontFamily="system-ui">
                     Instant Orders
                   </text>
                 </g>
@@ -236,12 +236,12 @@ export default function Features() {
                   <polyline
                     points="28,50 48,42 65,45 85,28 110,32 130,18"
                     fill="none"
-                    stroke="#10b981"
+                    stroke="#a78bfa"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                  <circle cx="130" cy="18" r="3" fill="#10b981" />
+                  <circle cx="130" cy="18" r="3" fill="#a78bfa" />
                   <text x="75" y="62" textAnchor="middle" fill="#e5e7eb" fontSize="11" fontWeight="600" fontFamily="system-ui">
                     GROW PORTFOLIO
                   </text>
@@ -249,14 +249,14 @@ export default function Features() {
 
                 {/* Floating signal badges */}
                 <g transform="translate(175, 55)">
-                  <rect width="52" height="22" rx="11" fill="#064e3b" stroke="#10b981" strokeWidth="1" />
-                  <text x="26" y="15" textAnchor="middle" fill="#6ee7b7" fontSize="9" fontWeight="600" fontFamily="system-ui">
+                  <rect width="52" height="22" rx="11" fill="#2e1065" stroke="#a78bfa" strokeWidth="1" />
+                  <text x="26" y="15" textAnchor="middle" fill="#ffd600" fontSize="9" fontWeight="600" fontFamily="system-ui">
                     BUY
                   </text>
                 </g>
                 <g transform="translate(490, 55)">
-                  <rect width="52" height="22" rx="11" fill="#1e1b4b" stroke="#818cf8" strokeWidth="1" />
-                  <text x="26" y="15" textAnchor="middle" fill="#a5b4fc" fontSize="9" fontWeight="600" fontFamily="system-ui">
+                  <rect width="52" height="22" rx="11" fill="#2e1065" stroke="#c084fc" strokeWidth="1" />
+                  <text x="26" y="15" textAnchor="middle" fill="#e9d5ff" fontSize="9" fontWeight="600" fontFamily="system-ui">
                     SELL
                   </text>
                 </g>
@@ -267,7 +267,7 @@ export default function Features() {
             {features.map((feature) => (
               <article key={feature.title} data-aos="fade-up">
                 <svg
-                  className="mb-3 fill-emerald-500"
+                  className="mb-3 fill-violet-500"
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
                   height={24}
@@ -278,7 +278,7 @@ export default function Features() {
                 <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
                   {feature.title}
                 </h3>
-                <p className="text-indigo-200/65">{feature.description}</p>
+                <p className="text-zinc-400">{feature.description}</p>
               </article>
             ))}
           </div>

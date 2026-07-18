@@ -53,19 +53,19 @@ const insights = [
 
 export default function Mockups() {
   return (
-    <section id="insights" className="relative z-10 bg-gray-950">
+    <section id="insights" className="relative z-10 bg-background">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-400/.25),transparent)1] md:py-20">
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-emerald-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-emerald-200/50">
-              <span className="inline-flex bg-linear-to-r from-emerald-500 to-indigo-200 bg-clip-text text-transparent">
+            <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-linear-to-r before:from-transparent before:to-violet-200/50 after:h-px after:w-8 after:bg-linear-to-l after:from-transparent after:to-violet-200/50">
+              <span className="inline-flex bg-linear-to-r from-violet-500 to-violet-200 bg-clip-text text-transparent">
                 Market Insights
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-emerald-300),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-accent),var(--color-gray-50),var(--color-brand-light),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
               Learn, practice, and grow as a trader
             </h2>
-            <p className="text-lg text-indigo-200/65">
+            <p className="text-lg text-zinc-400">
               From trading lounges to global seminars — see how the ecosystem
               around modern trading is evolving.
             </p>
@@ -75,7 +75,7 @@ export default function Mockups() {
             {insights.map((item) => (
               <article
                 key={item.title}
-                className="overflow-hidden rounded-2xl border border-gray-800/80 bg-gray-900/40"
+                className="overflow-hidden rounded-2xl border border-violet-900/50 bg-gray-900/40"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
@@ -85,7 +85,7 @@ export default function Mockups() {
                     className="object-cover transition duration-300 hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <span className="absolute left-3 top-3 rounded-full bg-emerald-500/90 px-2.5 py-0.5 text-xs font-medium text-white">
+                  <span className="absolute left-3 top-3 rounded-full bg-accent/90 px-2.5 py-0.5 text-xs font-medium text-white">
                     {item.tag}
                   </span>
                 </div>
@@ -93,7 +93,7 @@ export default function Mockups() {
                   <h3 className="mb-2 font-nacelle text-[1rem] font-semibold text-gray-200">
                     {item.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-indigo-200/65">
+                  <p className="text-sm leading-relaxed text-zinc-400">
                     {item.description}
                   </p>
                 </div>

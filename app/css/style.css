@@ -12,12 +12,19 @@
   --font-inter: var(--font-inter), sans-serif;
   --font-nacelle: var(--font-nacelle), sans-serif;
 
-  --color-background: #030712;
-  --color-foreground: #e5e7eb;
-  --color-card: #111827;
-  --color-card-foreground: #e5e7eb;
-  --color-muted-foreground: #9ca3af;
-  --color-border: #1f2937;
+  /* Stoxra-inspired brand palette */
+  --color-background: #0a0118;
+  --color-foreground: #f4f4f5;
+  --color-card: #12082a;
+  --color-card-foreground: #f4f4f5;
+  --color-muted-foreground: #a1a1aa;
+  --color-border: #2e1065;
+
+  --color-brand: #7c3aed;
+  --color-brand-light: #a78bfa;
+  --color-brand-dark: #5b21b6;
+  --color-accent: #ffd600;
+  --color-accent-dark: #e6c200;
 
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.5384;
@@ -99,14 +106,6 @@
   }
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -114,5 +113,12 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
+  }
+
+  body {
+    background-color: #0a0118;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(124, 58, 237, 0.35), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%, rgba(168, 85, 247, 0.15), transparent);
   }
 }

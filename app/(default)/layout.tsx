@@ -23,7 +23,7 @@ export default function DefaultLayout({
 
   return (
     <>
-      <main className="relative flex grow flex-col bg-gray-950">{children}</main>
+      <main className="relative flex grow flex-col bg-background">{children}</main>
 
       <Footer />
     </>

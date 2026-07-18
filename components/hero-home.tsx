@@ -5,60 +5,80 @@ const HERO_IMAGE =
 
 export default function HeroHome() {
   return (
-    <section id="hero" className="relative z-10 overflow-hidden bg-gray-950">
+    <section id="hero" className="relative z-10 overflow-hidden">
+      <div
+        className="pointer-events-none absolute inset-0 -z-10"
+        aria-hidden="true"
+      >
+        <div className="absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-violet-600/20 blur-[120px]" />
+        <div className="absolute right-0 top-40 h-[300px] w-[400px] rounded-full bg-fuchsia-500/10 blur-[100px]" />
+      </div>
+
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="py-8 sm:py-12 md:py-20">
-          <div className="pb-8 text-center sm:pb-12 md:pb-16">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-300 sm:mb-6 sm:px-4 sm:py-1.5 sm:text-sm">
+        <div className="grid items-center gap-10 py-10 md:py-16 lg:grid-cols-2 lg:gap-12 lg:py-20">
+          {/* Left copy */}
+          <div className="text-center lg:text-left">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-3 py-1.5 text-xs text-violet-200 sm:text-sm">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
               </span>
-              AI-Powered Trading Platform
+              India&apos;s Own AI-Powered Trading Ecosystem
             </div>
-            <h1 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-emerald-300),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent sm:pb-5 sm:text-4xl md:text-5xl lg:text-6xl">
-              Trade Smarter with AI at Every Step
+
+            <h1 className="pb-5 font-nacelle text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl lg:text-[3.25rem]">
+              The Future Belongs To Those Who{" "}
+              <span className="text-accent">Trade</span> Today
             </h1>
-            <div className="mx-auto max-w-3xl">
-              <p className="mb-6 text-base text-indigo-200/65 sm:mb-8 sm:text-xl">
-                From opening your trading account to executing winning strategies
-                — TradeMind AI guides beginners and professionals with real-time
-                market insights, portfolio analysis, and 24/7 intelligent support.
-              </p>
-              <div className="mx-auto flex max-w-xs flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center sm:gap-0">
-                <a
-                  className="btn group w-full bg-linear-to-t from-emerald-600 to-emerald-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] sm:w-auto"
-                  href="/signup"
-                >
-                  <span className="relative inline-flex items-center">
-                    Start Trading with AI
-                    <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
-                      -&gt;
-                    </span>
-                  </span>
-                </a>
-                <a
-                  className="btn relative w-full bg-linear-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto"
-                  href="/signup"
-                >
-                  Open Your Free Trading Account
-                </a>
-              </div>
-              <p className="mt-5 text-xs text-gray-500 sm:mt-6 sm:text-sm">
-                No minimum deposit · Account setup in under 5 minutes ·
-                Bank-grade security
-              </p>
+
+            <p className="mb-8 text-base text-zinc-400 sm:text-lg">
+              From opening your trading account to executing winning strategies —
+              TradeMind AI guides beginners and professionals with real-time
+              market insights, portfolio analysis, and 24/7 intelligent support.
+            </p>
+
+            <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
+              <a
+                href="/signup"
+                className="inline-flex w-full items-center justify-center rounded-xl bg-linear-to-r from-violet-600 to-fuchsia-500 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_0_32px_rgba(124,58,237,0.55)] transition hover:brightness-110 sm:w-auto"
+              >
+                Start Trading Free
+              </a>
+              <a
+                href="#insights"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-violet-500/40 bg-violet-950/40 px-6 py-3.5 text-sm font-semibold text-zinc-200 transition hover:border-violet-400/60 hover:bg-violet-900/40 sm:w-auto"
+              >
+                <svg className="h-4 w-4 fill-accent" viewBox="0 0 20 20">
+                  <path d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.34-5.89a1.5 1.5 0 0 0 0-2.54L6.3 2.84Z" />
+                </svg>
+                Watch Demo
+              </a>
             </div>
+
+            <p className="mt-5 text-xs text-zinc-500">
+              No minimum deposit · Account setup in under 5 minutes · Bank-grade
+              security
+            </p>
           </div>
 
-          <div className="mx-auto max-w-4xl">
-            <div className="overflow-hidden rounded-2xl border border-gray-800/80 shadow-2xl shadow-emerald-500/5">
+          {/* Right visual */}
+          <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
+            <div className="absolute -inset-4 rounded-[2rem] bg-violet-600/20 blur-2xl" aria-hidden="true" />
+            <div className="relative overflow-hidden rounded-2xl border border-violet-500/40 bg-[#12082a] p-2 shadow-[0_0_40px_rgba(124,58,237,0.35)]">
+              <div className="mb-2 flex items-center justify-between px-2 pt-1">
+                <span className="text-xs font-medium text-zinc-400">
+                  TradeMind AI
+                </span>
+                <span className="rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-semibold text-accent">
+                  LIVE
+                </span>
+              </div>
               <Image
                 src={HERO_IMAGE}
-                alt="TradeMind AI community and platform highlight"
+                alt="TradeMind AI platform highlight"
                 width={1400}
                 height={720}
-                className="h-auto w-full object-cover"
+                className="h-auto w-full rounded-xl object-cover"
                 priority
               />
             </div>
